@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
+    <h1>Recipe Book</h1>
 </head>
 <body>
-    <h1>Recipe Book</h1>
     <ul>
-        {% for recipe in recipes%}
-            <li><h2><a href="{{recipe.link}}">{{recipe.name}}</a></h2></li>
+        {% for recipe in object_list %}
+            <li><a href="{{recipe.get_absolute_url}}">{{recipe.name}}</a></li>
         {% endfor %}
-    </ul>
+    </ul> 
 </body>
 </html>
