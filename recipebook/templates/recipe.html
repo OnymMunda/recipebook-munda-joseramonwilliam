@@ -9,8 +9,8 @@
 <body>
     <h1>{{name}}</h1>
     <ul>
-        {% for x in ingredients %}
-            <li>{{x.name}} - {{ x.quantity}}</li>
+        {% for ingredient in ingredients %}
+            <li>{{ingredient.name}} - {{ingredient.quantity}}</li>
         {% endfor %}
     </ul>
     
